@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form tambah barang</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+  <body>
+    <style>
+        .streamline--medical-cross-sign-healthcare {
+            display: inline-block;
+            width: 96px;
+            height: 96px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath fill='none' stroke='%23b60707' stroke-linecap='round' stroke-linejoin='round' d='M9 .5H5V5H.5v4H5v4.5h4V9h4.5V5H9z'/%3E%3C/svg%3E");
+        }
+        .noto-v1--back-arrow {
+            display: inline-block;
+            width: 96px;
+            height: 96px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cpath fill='%2378a3ad' d='M52.52 92.09h-6.43c-.26 0-.49.16-.57.4L35.17 120l.07.57c.11.17.3.27.51.27h6.77c.27 0 .5-.17.59-.43l1.57-4.72h9.25l1.57 4.72c.08.25.32.43.58.43h6.78c.2 0 .39-.1.5-.27l.07-.57L53.1 92.49c-.1-.24-.32-.4-.58-.4m-5.9 17.75l2.69-8.09l2.68 8.09zm-16.07-3.89c1.57-1.49 2.55-3.49 2.55-5.7c0-4.57-4.14-8.29-9.21-8.29H13.47c-.34 0-.62.27-.62.62v27.78c0 .34.28.62.62.62H25.2c5.08 0 9.21-3.72 9.21-8.3c0-2.78-1.53-5.22-3.86-6.73m-7.08-2.58h-3.85l-.13-4.88l-.02-.84h.02l.62-.03l3.35-.12c1.55 0 2.8 1.31 2.8 2.93c.01 1.63-1.25 2.94-2.79 2.94m.22 12.24h-4.05v-.01l-.15-6.63l.62-.02l3.22-.11l.36-.01c.04 0 .08.01.11.01c1.66.07 3 1.55 3 3.38c0 1.83-1.33 3.32-3 3.39c-.03-.01-.06 0-.11 0m61.82-4.55l-.27.06c-1.74 1.38-4.73 2.42-6.96 2.42c-4.3 0-7.3-2.91-7.3-7.07c0-4.17 3-7.08 7.3-7.08c2.33 0 4.72.75 6.23 1.95l.27.07l.22-.16l3.45-6.28l-.08-.42c-2.62-2.06-5.92-3.07-10.12-3.07c-8.94 0-15.43 6.3-15.43 14.99c0 8.68 6.49 14.98 15.43 14.98c4.09 0 7.63-1.25 10.5-3.7l.08-.4l-3.1-6.12zm20.29-5.81l8.18-12.33a.62.62 0 0 0 .03-.63a.622.622 0 0 0-.55-.32h-6.72c-.21 0-.4.1-.52.27l-7.42 11.19V92.57c0-.34-.28-.62-.62-.62h-6.03c-.34 0-.61.27-.61.62v27.78c0 .34.28.62.61.62h6.03c.34 0 .62-.28.62-.62v-13.21l8.48 13.55c.12.18.31.29.52.29h6.73c.23 0 .43-.12.53-.32a.6.6 0 0 0-.01-.62z'/%3E%3Cpath fill='%2340c0e7' d='m14.78 47.94l47.61-34.9v21.77h50.83v26.04H62.39v22z'/%3E%3C/svg%3E");
+        }
+    </style>
+    <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="#">Puskemas Gunung Sari</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container text-center">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <span class="streamline--medical-cross-sign-healthcare"></span>
+                <p class="fs-1">Selamat datang di Puskemas Gunung Sari</p>
+                <p class="fs-1">Ini halaman Tambah Barang</p>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h5>Kembali ke Home:</h5>
+                        </div>
+                        <span class="noto-v1--back-arrow"></span>
+                    </div>
+                    <div class="card-body">
+                        <a href="index.html"><button type="button" class="btn btn-primary">Kembali ke Home</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+            </div>
+            <div class="col-4">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h5>Tambah barang:</h5>
+                        </div>
+                        <span class="fxemoji--inboxtray"></span>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <fieldset>
+                              <div class="mb-3">
+                                <label for="Namabarang" class="form-label">Nama Barang</label>
+                                <input type="text" id="namabarang" class="form-control" placeholder="Masukan nama barang">
+                              </div>
+                              <div class="mb-3">
+                                <label for="hargabarang" class="form-label">Harga barang</label>
+                                <input type="text" id="hargabarang" class="form-control" placeholder="Masukan harga barang">
+                              </div>
+                              <div class="mb-3">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                              </div>
+                              
+                            </fieldset>
+                          </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Daftar barang:</h5>
+                    </div>
+                </div>
+                <table class="table table-success table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Harga</th>
+                        <th scope="col">Jumlah</th>
+                        <th scope="col">Harga total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>RHINOS SR CAP</td>
+                        <td>2.000</td>
+                        <td>100</td>
+                        <td>200.000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>CATAFLAM 50MG</td>
+                        <td>2.000</td>
+                        <td>100</td>
+                        <td>200.000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>VENTOLIN INHALER</td>
+                        <td>2.000</td>
+                        <td>100</td>
+                        <td>200.000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>MEFINAL 500MG CAPS</td>
+                        <td>2.000</td>
+                        <td>100</td>
+                        <td>200.000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>LAMESON 4MG TABL</td>
+                        <td>2.000</td>
+                        <td>100</td>
+                        <td>200.000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>RHINOS JUNIOR </td>
+                        <td>2.000</td>
+                        <td>100</td>
+                        <td>200.000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>NEURALGIN</td>
+                        <td>2.000</td>
+                        <td>100</td>
+                        <td>200.000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td>DIANE TAB</td>
+                        <td>2.000</td>
+                        <td>100</td>
+                        <td>200.000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9</th>
+                        <td>RHINOS NEO</td>
+                        <td>2.000</td>
+                        <td>100</td>
+                        <td>200.000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10</th>
+                        <td>IMODIUM TABL</td>
+                        <td>2.000</td>
+                        <td>100</td>
+                        <td>200.000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">11</th>
+                        <td>TREMENZA TABL</td>
+                        <td>2.000</td>
+                        <td>100</td>
+                        <td>200.000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">12</th>
+                        <td>BIOPLACENTON</td>
+                        <td>2.000</td>
+                        <td>100</td>
+                        <td>200.000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+      </div>
+  </body>
+</html>
+
